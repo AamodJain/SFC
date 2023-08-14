@@ -26,7 +26,7 @@ def rotate_2(l,n):
         else :
             ans_list_1.append((x,y+2**(n-1)))
     '''
-    for i in range(4**(n-1),-1,-1):
+    for i in range(4**(n-1)-1,-1,-1):
         x,y = l[i]
         y = 2**n -(y-1)
         ans_list_1.append((x,y))
