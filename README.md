@@ -17,15 +17,6 @@ def shift_2 (l,n):
         ans_list_1.append((x+(2**(n-1)),y+(2**(n-1))))
 
 def rotate_2(l,n):
-    '''
-    for i in l:
-        x,y = i 
-        if (x==y):
-            k = 2**(n-1)+1-x
-            ans_list_1.append((k,k+2**(n-1)))
-        else :
-            ans_list_1.append((x,y+2**(n-1)))
-    '''
     for i in range(4**(n-1)-1,-1,-1):
         x,y = l[i]
         y = 2**n -(y-1)
